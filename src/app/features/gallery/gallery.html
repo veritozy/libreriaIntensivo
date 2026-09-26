@@ -1,0 +1,11 @@
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-7">
+    @for (libro of libros(); track libro.id) {
+    <div>
+        <img class="h-auto max-w-full rounded-lg mx-auto" [src]="libro.formats['image/jpeg']" [alt]="libro.title">
+        <h2 class="text-center">{{libro.title}}</h2>
+        <p class="text-center">{{libro.authors[0].name}}</p>
+        <p class="text-center">{{libro.summaries}}</p>
+    </div>
+    }
+</div>
+
