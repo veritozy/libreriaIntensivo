@@ -12,6 +12,8 @@ export class LibroService {
 
   private http = inject(HttpClient);
   //constructor(private http: HttpClient){}
+  //hola
+  
 
   obtenerLibros():Observable<ResultadosApi>{
     return this.http.get<ResultadosApi>(this.API_LIBROS);
